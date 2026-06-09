@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pkl
+*.joblib
+
+# Environment
+.env
+*.env
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Data files 
+backend/ml/data/
+
+# Model artifacts 
+backend/ml/models/*.pkl
+
+# Node
+node_modules/
+build/
+.npm
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
