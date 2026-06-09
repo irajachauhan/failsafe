@@ -82,14 +82,16 @@ ALTER DATABASE failsafe OWNER TO failsafe_user;
 ```
 
 ### 4. Create `.env` file
-Create `backend/.env`:
-DATABASE_URL=postgresql://failsafe_user:failsafe123@localhost:5432/failsafe
-SECRET_KEY=failsafe_super_secret_key_change_in_production
+Create `backend/.env` with the following structure:
+DATABASE_URL=postgresql://YOUR_DB_USER:YOUR_DB_PASSWORD@localhost:5432/failsafe
+SECRET_KEY=your_long_random_secret_key
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 REFRESH_TOKEN_EXPIRE_DAYS=7
 APP_NAME=FAILSAFE
 DEBUG=True
+
+> Replace `YOUR_DB_USER`, `YOUR_DB_PASSWORD`, and `SECRET_KEY` with your own values.
 
 ### 5. Set up data files
 Place the following CSVs in `backend/ml/data/`:
