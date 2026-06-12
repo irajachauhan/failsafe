@@ -163,3 +163,7 @@ UCI ML Repository — Student Performance Dataset
 33 features including grades, demographics, and behavioral indicators  
 Target: Binary risk classification (G3 < 10 = at-risk)
 
+## Contributers
+Raja Chauhan
+Aditya Verma
+
